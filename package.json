@@ -1,0 +1,43 @@
+{
+  "name": "@onichandame/nestjs-mongodb-in-memory",
+  "version": "0.0.0",
+  "description": "nestjs module to start mongodb in memory",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onichandame/nestjs-mongodb-in-memory.git"
+  },
+  "keywords": [
+    "nestjs",
+    "mongodb"
+  ],
+  "author": "onichandame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onichandame/nestjs-mongodb-in-memory/issues"
+  },
+  "homepage": "https://github.com/onichandame/nestjs-mongodb-in-memory#readme",
+  "dependencies": {
+    "@nestjs/common": "^7.6.17",
+    "@nestjs/core": "^7.6.17",
+    "mongodb-memory-server": "^6.9.6",
+    "rxjs": "^7.1.0"
+  },
+  "peerDependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@jest/types": "^27.0.2",
+    "@nestjs/testing": "^7.6.17",
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
