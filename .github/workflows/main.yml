@@ -1,4 +1,4 @@
-name: publish
+name: main
 on:
   push:
     branches:
@@ -27,7 +27,7 @@ jobs:
       - name: Build distribution files
         run: yarn && yarn build
       - name: Publish
-        uses: onichandame/github-action-npm-publish:v0.1.6
+        uses: onichandame/github-action-npm-publish@v0.1.6
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }} # set this in github secrets
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # leave as it is. auto generated
