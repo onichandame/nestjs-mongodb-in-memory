@@ -3,9 +3,18 @@
   "version": "0.0.0",
   "description": "nestjs module to start mongodb in memory",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p ./tsconfig.build.json",
+    "format": "pretty-quick --staged",
     "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   },
   "repository": {
     "type": "git",
@@ -34,7 +43,10 @@
     "@jest/types": "^27.0.2",
     "@nestjs/testing": "^7.6.17",
     "@types/jest": "^26.0.23",
+    "husky": "^6.0.0",
     "jest": "^27.0.4",
+    "prettier": "^2.3.1",
+    "pretty-quick": "^3.1.0",
     "reflect-metadata": "^0.1.13",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
